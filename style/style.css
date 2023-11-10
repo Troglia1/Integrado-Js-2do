@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
+:root {
+  --background: #2669a3;
+  --background2: #f8f7f7;
+  --color-base: #347ebf;
+  --amarillo: #f2b705;
+  --verdeagua: #03a696;
+  --rojo: #d9042b;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -50,7 +59,7 @@ body {
   position: absolute;
   top: -13px;
   right: -10px;
-  background-color: #e47575;
+  background-color: var(--color-base);
   padding: 0 5px;
   border-radius: 30%;
   color: #333;
@@ -146,7 +155,7 @@ button .fa-trash-can {
   padding: 0.25em;
   font-size: 18px;
   border: 0px solid transparent;
-  color: #ffa500;
+  color: var(--rojo);
   border-radius: 1.25em;
   transition: all 0.2s linear;
 }
@@ -189,7 +198,7 @@ button .fa-trash-can {
 
 .fa-chevron-left,
 .fa-chevron-right {
-  color: #ffa500;
+  color: var(--verdeagua);
   cursor: pointer;
 }
 
@@ -241,8 +250,8 @@ button {
   padding: 0.7em 1.7em;
   font-size: 18px;
   border-radius: 0.5em;
-  background: #ffa500;
-  border: 1px solid #ffa500;
+  background: var(--rojo);
+  border: 1px solid var(--rojo);
   transition: all 0.3s;
   box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
 }
@@ -290,7 +299,7 @@ ul li {
   content: "";
   height: 3px;
   width: 100%;
-  background: #ffa500;
+  background: var(--rojo);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -324,20 +333,20 @@ p {
 }
 
 .category {
-  background-color: #ce9898;
+  background-color: var(--verdeagua);
   padding: 15px;
   margin-left: 25px;
   border-radius: 55px;
 }
 
 .category:hover {
-  background-color: #ff0000;
+  background-color: var(--verdeagua);
   transition: 0.4s ease;
 }
 
 .category.active {
   transition: 0.4s ease;
-  background-color: #ff0000;
+  background-color: var(--verdeagua);
 }
 
 /* Productos */
@@ -363,7 +372,7 @@ p {
   line-height: 60px;
   margin: 25px 0;
   background: rgba(0, 0, 0, 0.096);
-  color: rgb(104, 24, 24);
+  color: #0d0d0d;
   border-radius: 10px;
 }
 
@@ -388,7 +397,7 @@ p {
 }
 
 .background {
-  background: radial-gradient(#c6c6d4, #b85757);
+  background: linear-gradient(#f8f7f7, #347ebf);
   height: 100vh;
   margin-top: 0px;
 }
@@ -455,7 +464,7 @@ p {
 
 .title::after {
   content: "";
-  background: #ec0505;
+  background: var(--amarillo);
   width: 80px;
   height: 5px;
   border-radius: 5px;
@@ -507,7 +516,7 @@ h4 {
   height: 60px;
   border-radius: 8px;
   color: #ffffff;
-  background-color: #6e160a;
+  background-color: var(--color-base);
   overflow: hidden;
   cursor: pointer;
   transition: 0.3s ease;
@@ -523,7 +532,7 @@ h4 {
 }
 
 .button-text:disabled {
-  background-color: #ffdb9d;
+  background-color: var(--amarillo);
   color: #000;
   font-weight: 400;
 }
@@ -612,14 +621,14 @@ form h2.title {
 .contactForm .inputBox input:valid ~ span,
 .contactForm .inputBox textarea:focus ~ span,
 .contactForm .inputBox textarea:valid ~ span {
-  color: #e91e63;
+  color: var(--amarillo);
   font-size: 12px;
   transform: translateY(-20px);
 }
 
 .contactForm .inputBox input[type="submit"] {
   width: 100px;
-  background-color: #0e1a8a;
+  background-color: var(--color-base);
   color: #fff;
   border: none;
   cursor: pointer;
